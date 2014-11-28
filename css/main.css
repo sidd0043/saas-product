@@ -12,6 +12,29 @@ html {
   text-size-adjust: 100%;
 }
 
+@media only screen and (min-width: 60em) {
+    
+    html {
+        font-size: 110%;
+    }
+    
+}
+
+@media only screen and (min-width: 90em) {
+    
+    html {
+        font-size: 120%;
+    }
+    
+}
+
+@media only screen and (min-width: 120em) {
+    
+    html {
+        font-size: 130%;
+    }
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -46,7 +69,7 @@ html {
 .nav a {
     display: block;
     text-decoration: none;
-    color: red;
+    color: #FFFFFF;
     text-transform: uppercase;
     font-family:'Open Sans', sans-serif;
 }
@@ -54,18 +77,15 @@ html {
 
 
 .logo {
-    margin: 0 1rem;
+    margin: 2 0rem;
     align-items: center;
-    width: 5em;
+    width: 4REM;
 }
 .header {
-	background-color:#515153;
+	background-color:#2d2a2b;
     overflow: hidden;
 }
 
-img {
-    width:100%;
-}
 
 body {
     margin: 0;
@@ -88,7 +108,7 @@ a:active {
 .nav .nav-current,
 .nav .nav-current:link,
 .nav .nav-current:visited { 
-    background-color: none;
+    background-color: #DF0101;
     
     color: #fff;
 }
@@ -103,12 +123,12 @@ a:focus {
 }
 
 .banner-img {
-    padding-top: 66.56%;
-    background-image: url("http://placehold.it/1920x1080/");
+    padding-top: 66.60%;
+    background-image: url(../images/banner-img.gif);
     background-size: cover;
 }
 .intro-wrap {
-    background-color: #fff;
+    background-color: #2d2a2b;
     color: #fff;
 }
 
@@ -116,15 +136,14 @@ a:focus {
     border:1px solid #515153 ;
     border-radius: 5px;
     font-family:'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
-    padding: 14px 48px 14px 48px;
+    padding: 14px 30px 14px 30px;
     text-decoration: none; 
     display:inline-block;
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
     font-weight:bold; color: #000;
-    background-color: #a8d7dc ; 
-    background-image: linear-gradient(to bottom, #9ad2db, #daf1f2);
+    background-color: #DF0101 ; 
+    background-image: linear-gradient(to bottom, #DF0101, #daf1f2);
 }
 
 .button:hover{
@@ -133,94 +152,84 @@ a:focus {
     color: #fff;
 }
 
-h1 {
+.intro{
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
-    color:#333;
+    color:#DF0101;
+    font-size: 40px;
 }
 
 .sub-head{ 
-    color: red;
+    color: #fff;
+    font-size: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.subh1 {
-	max-width: 20em;
-	margin: 0 auto;
+.title {
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    font-size: 27px;
 }
-
-.collab,
-.fin-deliver,
-.work-faster {
-	background-color: #000;
-	color: #fff;
-}
-
-.collab h2,
-.fin-deliver h2,
-.work-faster h2 {
-	margin-top: 1.25em;
-}
-
-.collab p,
-.fin-deliver p,
-.work-faster p {
-	margin-top: -.75em;
-}
-
 
 .footer {
-	background-color: #515153;
+	background-color: #2d2a2b;
 	text-align: center;
-	color: #f2f2f2;
+	color: #fff;
 }
-
-.copyright {
-	margin-top: 8em;
-}
-
-
-.worlds-most {
+.nav-bottom {
+	padding: 0;
+	margin-top: 3em;
+	list-style-type: none;
 	text-align: center;
+    margin-top: 1em;
 }
 
-.worlds-most h2 {
-	padding-top: 1em;
-	color: #000;
+.nav-bottom a,
+.nav-bottom a:link,
+.nav-bottom a:visited {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: .25em 0;
+    margin-top: -1em;
 }
 
-.worlds-most p {
-	margin-top: -.75em;
+.nav-bottom a:hover,
+.nav-bottom a:focus,
+.nav-bottom a:active {
+  background-color: #DF0101;
+  color: #fff;
+}
+
+.icon{
+    display:block;
+    margin:0 auto;
+}
+
+.free-trial{
+    text-align:center;
+    margin-bottom: 1em;
 }
 
 @media only screen and (min-width: 25em) {
     
     .nav li {
-     display: inline-block;
-  }
+        display: inline-block;
+    }
 
-  .nav {
-     text-align: center;
-     padding: 0;
-  }
-   
+    .nav {
+        text-align: center;
+        padding: 0;
+    }
+    
+    .flex {
+	display: block;
+	width: 110%;
+        margin-top: 1em;
+    }
 }
-
 @media only screen and (min-width: 38em) {
-    .nav{
+    .nav {
         text-align: right;
         margin-top: -1.5em;
     }
@@ -229,24 +238,66 @@ h1 {
       bottom: 0;
       position:  absolute;
       background-color: transparent;
-    margin-bottom: 10em;
-      
-  }
+      margin-bottom: 4.5em;
+      min-height: 20rem;
+      }
+    
+      .intro{
+        max-width: 25rem;
+        font-size: 45px;
+    }
+    
+    .sub-head{
+        max-width: 25rem;
+        text-align: center;
+        font-size: 18px;
+    }
+    .button {
+    font-size: 30px;
+    }
+    
+    .flex {
+        display: block;
+        width: 115%;
+        margin-top: 1em;
+    }
+    
+    .nav-bottom a,
+	.nav-bottom a:link,
+	.nav-bottom a:visited {
+  		margin: 1em %5;
+	}
 
 @media only screen and (min-width: 60em) {
       
-    html {
-        font-size: 110%;
-    }
     .nav-footer {
         text-align: right;
     }
 	
+    .intro-wrap {
+        bottom: 0;
+        position:  absolute;
+        background-color: transparent;
+        margin-bottom: 15em;
+    }
+    
+    .intro{
+        max-width: 38rem;
+        font-size: 55px;
+        
+    }
+    
+    .sub-head{
+        max-width: 38rem;
+        font-size: 28px;
+    }
+    
+    .button {
+    font-size: 40px;
+    }
 }
 @media only screen and (min-width:90em) {
-    html {
-        font-size: 120%;
-    }
+    
     .nav-footer {
         text-align: right;
     }
@@ -254,19 +305,53 @@ h1 {
     .copyright{
          text-align: left;
   }
+     .intro-wrap {
+        bottom: 0;
+        position:  absolute;
+        background-color: transparent;
+        margin-bottom: 19em;
+    }
+    
+    .intro{
+        max-width: 50rem;
+        font-size: 55px;
+        
+    }
+    
+    .sub-head{
+        max-width: 50rem;
+        font-size: 28px;
+    }
     
 }
 
 @media only screen and (min-width:120em) {
-    html {
-        font-size: 130%;
-    }
+ 
     .nav-footer {
         text-align: right;
     }
     
     .copyright{
          text-align: left;
-  }
+    }
+    
+     .intro-wrap {
+         bottom: 0;
+         position:  absolute;
+         background-color: transparent;
+         margin-bottom: 19em;
+    }
+    
+    .intro{
+        max-width: 60rem;
+        font-size: 80px;
+        
+    }
+    
+    .sub-head{
+        max-width: 60rem;
+        font-size: 40px;
+    }
+    
 
 }

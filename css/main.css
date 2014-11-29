@@ -36,7 +36,7 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: inherit inherit;
 }
 
 .skip-links {
@@ -77,9 +77,9 @@ html {
 
 
 .logo {
-    margin: 2 0rem;
-    align-items: center;
-    width: 4REM;
+    margin: 2em;
+    align-content: center;
+    width: 4em;
 }
 .header {
 	background-color:#2d2a2b;
@@ -134,7 +134,7 @@ a:focus {
 
 .button {
     border:1px solid #515153 ;
-    border-radius: 5px;
+    border-radius: 5em;
     font-family:'Open Sans', sans-serif;
     font-size: 25px;
     text-transform: uppercase;
@@ -165,8 +165,8 @@ a:focus {
     font-size: 15px;
 }
 
-.title {
-    text-align: left;
+.titles {
+    text-align: center;
     font-family: 'Roboto Slab', serif;
     font-size: 27px;
 }

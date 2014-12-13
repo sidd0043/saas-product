@@ -1,35 +1,34 @@
-<!DOCTYPE html>
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
   <title>ProFitness</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
-  <link href="css/typography.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/grids.css" rel="stylesheet" type="text/css">
+    <link href="css/color.css" rel="stylesheet" type="text/css">
+  <link href="css/typography.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300|Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+    
 <ul class="skip-links">
   	<li><a href="#navigation">Skip to navigation</a></li>
   	<li><a href="#main">Skip to the main content</a></li>
 </ul>
 
-<header id="top" role="banner" class="header island-1-2">
-    <div class="logo push-top">
+<header role="banner" id="top" class="header island-1-2">
+    <div class=" logo">
         <a href="index.html">
-	<img src="images/profitnesslogo.svg" alt="ProFitness Logo" class="logo">
+            <img src="images/profitnesslogo.svg" alt="ProFitness Logo" class="logo">
         </a>
     </div>
     
     <div>
-	<nav id="navigation" role="navigation">
-    	<ul class="nav mega brand-family">
-      		<li class="gutter-1-2"><a class="nav-current" href="index.html">Home</a></li>
-            <li class="gutter-1-2"><a class="nav-current" href="pricing.html">Pricing</a></li>
-      		<li class="gutter-1-2"><a class="nav-current" href="sign-up.html">Sign up</a></li>
+        <nav role="navigation" id="navigation">
+            <ul class="nav mega brand-family">
+      		<li class="gutter-1-2"><a href="index.html">Home</a></li>
+            <li class="gutter-1-2"><a href="pricing.html">Pricing</a></li>
+      		<li class="gutter-1-2"><a href="sign-up.html">Join Now</a></li>
     	</ul>
 	</nav>
     </div>
@@ -43,17 +42,23 @@
     
         <main id="main" role="main">
 <!--Form-->
-            <div class="grid grid-center">
-                <div class="milli island form unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-                    <h1 class="team yotta puri bold">A Step away from success  </h1>  
-                    <p class="intro-signup pad-top peta marri">Your life is in your hands so take initive!</p>
+            
+            <div class="grid island-1-2">
+                <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+                    <h2 class="titles">A step away from success!</h2>
+                </div>
+                
+                <div class="unit unit-xs-1 unit-s-1 unit-m-1-1 unit-l-1-1">
+                    <p class="text-center italic intro-signup pad-top peta marri">-Don't just dream it, achieve it!</p>
                 </div>
             </div>
+                
+            
             <form class="form" action="thank-you.html">
             <div class="grid">
                 <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 marri pad-top-half pad-bottom">
-                    <div class=" puri pad-top giga">
-                        <h2 class="puri giga">Set your email and password</h2>
+                    <div class="pad-bottom puri pad-top giga">
+                        <h2 class="title bold zetta puri giga">Start Now</h2>
                     </div>
                         <div class="pad-bottom-half">
                             <label for="email">Email Address</label>
@@ -67,15 +72,26 @@
                             <label for="password-confirm" >Confirm Password</label>
                             <input class="field" type="password" id="password-confirm">
                         </div>
+                        <div class="pad-bottom-half">
+                            <label for="password-confirm" >Age</label>
+                            <input class="field" type="Age" id="Age">
+                        </div>
+                        <div class="pad-bottom-half">
+                            <label for="password-confirm" >Weight</label>
+                            <input class="field" type="Weight" id="Weight">
+                        </div>
+                        <div class="pad-bottom-half">
+                            <label for="password-confirm" >Height</label>
+                            <input class="field" type="Height" id="Height">
+                        </div>
+                    
+                    
                     </div>
                 </div>
-<!--personal info-->                
+              
                 <div class="grid">
                     <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 marri">
-                        <div class="option pad-top puri giga">
-                            <h2 class="puri giga">Trainer Information</h2>
-                        </div>
-<!--gender-->
+
                             <span class="radio">
                                 <input type="radio" id="male" name="option">
                                 <label for="male">Male</label>
@@ -86,33 +102,12 @@
                             </span>
                         </div>
                     </div>    
-<!--age, weight and height-->                
-                <div class="pad-bottom">
-                    <div class="marri pad-top-half"> 
-                        <label for="birthday">Age</label>
-                        <input  class="field" type="number" id="birthday">
-                    </div>
 
-                    <div class="marri pad-top-half"> 
-                        <label for="height">Weight</label>
-                        <input  class="field" type="number" id="height">
-                    </div>
-
-                    <div class="marri pad-top-half"> 
-                        <label for="weight">Height</label>
-                        <input  class="field" type="number" id="weight">
-                    </div>
-
-                    <div class="marri pad-top-half"> 
-                        <label for="goal-weight">End Goals</label>
-                        <input  class="field" type="number" id="goal-weight">
-                    </div>
-                </div>
 <!--weight loss plan-->
                 <div class="grid">
                     <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 pad-bottom-double">
-                        <div class="option pad-top puri giga">
-                            <h2 class="puri giga">Start Training</h2>
+                        <div class="pad-bottom option pad-top  giga">
+                            <h2 class="bold title giga">Train Now</h2>
                         </div>
                         <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 marri pad-bottom-half">
                             <span class="radio">
@@ -122,26 +117,26 @@
                         </div>
                         <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 marri pad-bottom-half">
                             <span class="radio">
-                                <input type="radio" id="lose-1-2-lb-per-week" name="option">
-                                <label for="lose-1-2-lb-per-week">Maintain weight</label>
+                                <input type="radio" id="Maintain-weight" name="option">
+                                <label for="Maintain-weight">Maintain weight</label>
                             </span>
                         </div>
                          <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 marri pad-bottom-half">
                             <span class="radio">
-                                <input type="radio" id="lose-1-lb-per-week" name="option">
-                                <label for="lose-1-lb-per-week">Gain Muscule</label>
+                                <input type="radio" id="Gain-Muscule" name="option">
+                                <label for="Gain-Muscule">Gain Muscule</label>
                             </span>
                         </div>
                          <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 marri pad-bottom-half">
                             <span class="radio">
-                                <input type="radio" id="lose-1-1-2-lbs-per-week" name="option">
-                                <label for="lose-1-1-2-lbs-per-week"> Cardio Training</label>
+                                <input type="radio" id="Cardio-Training" name="option">
+                                <label for="Cardio-Training"> Cardio Training</label>
                             </span> 
                         </div>
                         <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 marri pad-bottom-half">
                             <span class="radio">
-                                <input type="radio" id="lose-2-lb-per-week" name="option">
-                                <label for="lose-2-lb-per-week"> Strenght Training</label>
+                                <input type="radio" id="strenght-training" name="option">
+                                <label for="strenght-training"> Strenght Training</label>
                             </span>
                         </div>
                     </div>

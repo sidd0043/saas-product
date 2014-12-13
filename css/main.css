@@ -73,9 +73,17 @@ body {
 
 .banner-img {
     padding-top: 66.60%;
-    background-image: url(../images/banner-img.gif);
+    background-image: url(../images/Workout.0.jpg);
+    background-size: cover;
+
+}
+
+.banner-img1 {
+    padding-top: 66.60%;
+    background-image: url(../images/banner-img1.jpg);
     background-size: cover;
 }
+
 .intro-wrap {
     background-color: #2d2a2b;
     color: #fff;
@@ -124,7 +132,6 @@ body {
 
 .nav {
     padding: 0;
-    margin: 1em;
     list-style-type: none;
 }
 
